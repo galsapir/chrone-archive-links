@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Open on archive.is",
+  "version": "1.0.0",
+  "description": "Open the current page on archive.is / archive.today.",
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "contextMenus"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Open on archive.is"
+  },
+  "commands": {
+    "open-on-archive": {
+      "suggested_key": {
+        "default": "Alt+A",
+        "mac": "Alt+A"
+      },
+      "description": "Open current tab on archive.is"
+    }
+  }
+}
